@@ -2,14 +2,6 @@ package projectX;
 
 public class HelloBiodome04 {
 
-//    static boolean range(double temperature, double humidity, double oxygen){
-//        boolean boolTemp = temperature >=10 && temperature <27.5;
-//        boolean boolHum = humidity >40 && humidity <60;
-//        boolean boolOx = oxygen >=19.5 && oxygen <=23.5;
-//
-//        return boolTemp && boolHum && boolOx;
-//    }
-
     static boolean tempCheck(double temperature){
         return temperature >=10 && temperature <27.5;
     }
@@ -20,18 +12,19 @@ public class HelloBiodome04 {
         return oxygen >=19.5 && oxygen <=23.5;
     }
 
-    static void printArgs(double temperature, double humidity, double oxygen){
-        System.out.print(temperature+" ");
-        System.out.print(humidity+" ");
-        System.out.print(oxygen);
-    }
+//    static void printArgs(double temperature, double humidity, double oxygen){
+//        System.out.print(temperature+" ");
+//        System.out.print(humidity+" ");
+//        System.out.print(oxygen);
+//    }
 
     public static void main(String[] args) {
-        args = new String[]{"27","55","20"};
+        args = new String[]{"9","41","20"};
 
-//        if(args.length != 3){
-//            System.out.println("-> 입력된 값이 올바르지 않습니다. [온도][습도][산소농도] 순서대로 숫자 값을 입력해주세요");
-//        }
+        if(args.length != 3){
+            System.out.println("-> 입력된 값이 올바르지 않습니다. [온도][습도][산소농도] 순서대로 숫자 값을 입력해주세요");
+            return;
+        }
 
         double temperature;
         double humidity;
@@ -44,13 +37,14 @@ public class HelloBiodome04 {
         }catch (Exception e){
             System.out.println("-> 입력된 값이 올바르지 않습니다. [온도][습도][산소농도] 순서대로 숫자 값을 입력해주세요");
             return;
-//            e.printStackTrace();
         }
 
 //        boolean message = range(temperature, humidity, oxygen);
 
 
-        printArgs(temperature, humidity, oxygen);
+        System.out.print(temperature+" ");
+        System.out.print(humidity+" ");
+        System.out.print(oxygen);
 
         if(!tempCheck(temperature)){
             System.out.println("\n-> 온도값이 정상 범위를 벗어났습니다. 확인이 필요합니다");

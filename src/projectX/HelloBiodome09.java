@@ -2,7 +2,8 @@ package projectX;
 
 public class HelloBiodome09 {
     public static void main(String[] args) {
-//        args = new String[]{"111"};
+        //출력을 위한 args 인자 값
+//        args = new String[]{"8","&"};
 
         try {
             int num = Integer.parseInt(args[0]);
@@ -14,11 +15,11 @@ public class HelloBiodome09 {
 
             for(int i=0; i<num; i++){
                 for(int j=1; j<=num-i; j++){
-                    System.out.print("-");
+                    System.out.print(" ");
                 }
                 for(int k=0; k<i*2+1; k++){
                     if(k==i){
-                        System.out.print("&");
+                        System.out.print(args[1]);
                     }else {
                         System.out.print("*");
                     }
