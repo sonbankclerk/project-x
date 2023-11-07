@@ -1,6 +1,5 @@
 package projectX;
 
-
 public class HelloBiodome03 {
     public final double PI = 3.14;
     public final double B = 0.415;
@@ -45,7 +44,7 @@ public class HelloBiodome03 {
 
     public static void main(String[] args) {
         //온도, 습도, 산소
-        args = new String[]{"25.5", "65.0", "21.0"};
+//        args = new String[]{"25.5", "65.0", "21.0"};
 
         double temperature;
         double humidity;
@@ -60,7 +59,7 @@ public class HelloBiodome03 {
             double H = new HelloBiodome03().H(humidity, temperature, oxygen);
             System.out.print(temperature+" ");
             System.out.print(humidity+" ");
-            System.out.print(oxygen +"\n -> 생명지수 H ="+ H);
+            System.out.print(oxygen +"\n -> 생명지수 H ="+String.format("%.2f",H));
 
         }catch (Exception e){
             System.out.println("-> 입력된 값이 올바르지 않습니다. [온도][습도][산소농도] 순서 대로 숫자 값을 입력해주세요.");

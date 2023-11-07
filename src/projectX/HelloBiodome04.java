@@ -19,7 +19,7 @@ public class HelloBiodome04 {
 //    }
 
     public static void main(String[] args) {
-        args = new String[]{"9","41","20"};
+//        args = new String[]{"10","41","21"};
 
         if(args.length != 3){
             System.out.println("-> 입력된 값이 올바르지 않습니다. [온도][습도][산소농도] 순서대로 숫자 값을 입력해주세요");
@@ -41,6 +41,7 @@ public class HelloBiodome04 {
 
 //        boolean message = range(temperature, humidity, oxygen);
 
+        double H = new HelloBiodome03().H(humidity, temperature, oxygen);
 
         System.out.print(temperature+" ");
         System.out.print(humidity+" ");
@@ -53,7 +54,7 @@ public class HelloBiodome04 {
         }else if (!oxyCheck(oxygen)) {
             System.out.println("\n-> 산소값이 정상 범위를 벗어났습니다. 확인이 필요합니다");
         }else{
-            System.out.println("\n-> 생명의 나무는 안정적인 상태입니다 :)");
+            System.out.println("\n-> 생명의 나무는 안정적인 상태입니다. 건강지수는 "+String.format("%.2f",H)+"입니다.");
         }
 
 

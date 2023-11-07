@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HelloBiodome01 {
     public static void main(String[] args) {
-        args = new String[]{"s ss","bbb",""};
+//        args = new String[]{"ss"};
         for(String name : args){
             if(name.isEmpty()){
                 System.out.println("문자를 입력해주세요.");

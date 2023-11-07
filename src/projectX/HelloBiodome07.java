@@ -12,7 +12,7 @@ public class HelloBiodome07 {
     }
 
     public static void main(String[] args){
-        args = new String[]{" jjjcccg EEEYYYeee"};
+//        args = new String[]{" jjjcccg EEEYYYeee"};
         String a = args[0];
 
 //        final String[] NUCLEOTIDE = new String[]{"C","Y","J","E","H"};
