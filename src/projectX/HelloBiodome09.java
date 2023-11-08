@@ -3,7 +3,7 @@ package projectX;
 public class HelloBiodome09 {
     public static void main(String[] args) {
         //출력을 위한 args 인자 값
-//        args = new String[]{"8","&"};
+        args = new String[]{"8","&"};
 
         try {
             int num = Integer.parseInt(args[0]);

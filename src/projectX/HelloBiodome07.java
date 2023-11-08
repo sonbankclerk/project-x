@@ -1,8 +1,5 @@
 package projectX;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class HelloBiodome07 {
     static String message(String a){
         String b = a.toUpperCase();
@@ -37,22 +34,6 @@ public class HelloBiodome07 {
         output += list[list.length - 1] + count;
         System.out.println(list);
         System.out.print("->"+output.toString());
-
-//        boolean match = false;
-//
-//        for(char forList: list){
-//            for(char forNucleo: NUCLEOTIDE){
-//                if(forList == forNucleo){
-//                    match = true;
-//                    break;
-//                }
-//            }
-//            if(match){
-//                System.out.print(forList);
-//            }else {
-//                System.out.println("-> 염기서열은 C, J, H, E, Y 다섯가지로만 입력됩니다. 확인하고 다시 입력해주세요.");
-//            }
-//        }
 
     }
 }
