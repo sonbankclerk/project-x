@@ -1,6 +1,4 @@
-package projectX;
-
-import java.util.Scanner;
+package projectX.week1;
 
 public class HelloBiodome01 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package projectX;
+package projectX.week1;
 
 public class HelloBiodome03 {
     public final double PI = 3.14;

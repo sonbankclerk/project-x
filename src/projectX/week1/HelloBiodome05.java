@@ -1,4 +1,4 @@
-package projectX;
+package projectX.week1;
 
 public class HelloBiodome05 {
     static int g, h;

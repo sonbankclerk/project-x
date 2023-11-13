@@ -1,4 +1,4 @@
-package projectX;
+package projectX.week1;
 
 public class HelloBiodome06 {
     public static void main(String[] args) {
