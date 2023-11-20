@@ -6,7 +6,7 @@ import java.util.List;
 public class RoadToBiodome01 {
     public static void main(String[] args) {
         List<Integer> inputList = checkList(args);
-        List<Integer> result = countList(inputList);
+        int result = countList(inputList);
             System.out.println(">> " + result);
 
     }
@@ -34,8 +34,9 @@ public class RoadToBiodome01 {
     }
 
     //중복체크 & 결과
-    public static List<Integer> countList(List<Integer> inputList){
-        List<Integer> result = new ArrayList<>();
+    public static int countList(List<Integer> inputList){
+//        List<Integer> result = new ArrayList<>();
+        int test = 0;
 
         for(int i=0; i<inputList.size(); i++){
             boolean check = true;
@@ -47,10 +48,10 @@ public class RoadToBiodome01 {
                 }
             }
             if(check){
-                result.add(currentNum);
+                test=currentNum;
             }
         }
-        return result;
+        return test;
     }
 }
 
